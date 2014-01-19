@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6962D23F-FC59-43D6-A1EE-D622C352CD4D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{E4644F41-56F3-4522-9CAC-F633003D030A}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Payroll</RootNamespace>
-    <AssemblyName>Payroll</AssemblyName>
+    <RootNamespace>PayrollTests</RootNamespace>
+    <AssemblyName>PayrollTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,32 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddCommissionedEmployee.cs" />
-    <Compile Include="AddHourlyEmployee.cs" />
-    <Compile Include="AddSalariedEmployee.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="EmployeeClassifications\CommissionedClassification.cs" />
-    <Compile Include="EmployeeClassifications\HourlyClassification.cs" />
-    <Compile Include="EmployeeClassifications\PaymentClassification.cs" />
-    <Compile Include="EmployeeClassifications\SalariedClassification.cs" />
-    <Compile Include="EmployeePaymentMethod\DirectMethod.cs" />
-    <Compile Include="EmployeePaymentMethod\HoldMethod.cs" />
-    <Compile Include="EmployeePaymentMethod\MailMethod.cs" />
-    <Compile Include="EmployeePaymentMethod\PaymentMethod.cs" />
-    <Compile Include="EmployeeSchedules\BiweeklySchedule.cs" />
-    <Compile Include="EmployeeSchedules\MonthlySchedule.cs" />
-    <Compile Include="EmployeeSchedules\WeeklySchedule.cs" />
-    <Compile Include="EmployeeSchedules\PaymentSchedule.cs" />
-    <Compile Include="Transactions\AddEmployeeTransaction.cs" />
-    <Compile Include="PayrollDatabase.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="AddEmployeeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Transactions\Transaction.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\Payroll\Payroll.csproj">
+      <Project>{6962d23f-fc59-43d6-a1ee-d622c352cd4d}</Project>
+      <Name>Payroll</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
