@@ -14,12 +14,20 @@ namespace Payroll
         private PaymentClassification classification;
         private PaymentSchedule schedule;
         private PaymentMethod method;
+        private Affiliation affiliation;
 
         public Employee(int id, string name, string address)
         {
             this.id = id;
             this.name = name;
             this.address = address;
+            this.affiliation = null;
+        }
+
+        public Affiliation Affiliation
+        {
+            get { return this.affiliation; }
+            set { this.affiliation = value; }
         }
 
         public PaymentClassification Classification

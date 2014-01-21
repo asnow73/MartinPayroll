@@ -11,6 +11,7 @@ namespace Payroll
     public class PayrollDatabase
     {
         private static Hashtable employees = new Hashtable();
+        private static Hashtable unionMembers = new Hashtable();
 
         public static void AddEmployee(int id, Employee employee)
         {
@@ -25,6 +26,16 @@ namespace Payroll
         public static Employee GetEmployee(int id)
         {
             return employees[id] as Employee;
+        }
+
+        public static Employee GetUnionMember(int memberId)
+        {
+            return (unionMembers[memberId] as Employee);
+        }
+
+        public static void AddUnionMember(int memberId, Employee e)
+        {
+            unionMembers[memberId] = e;
         }
     }
 }
