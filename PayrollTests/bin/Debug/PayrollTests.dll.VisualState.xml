@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1012]D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll</TopNode>
-  <SelectedNode>[0-1012]D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll</SelectedNode>
+  <TopNode>[0-1022]D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll</TopNode>
+  <SelectedNode>[0-1022]D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1012]D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll" Expanded="true" />
-    <Node UniqueName="[0-1013]PayrollTests" Expanded="true" />
+    <Node UniqueName="[0-1022]D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll" Expanded="true" />
+    <Node UniqueName="[0-1023]PayrollTests" Expanded="true" />
     <Node UniqueName="[0-1000]PayrollTests.AddEmployeeTest" Expanded="true" />
     <Node UniqueName="[0-1004]PayrollTests.DelEmployeeTest" Expanded="true" />
     <Node UniqueName="[0-1006]PayrollTests.SalesReceiptTest" Expanded="true" />
     <Node UniqueName="[0-1008]PayrollTests.ServiceChargeTest" Expanded="true" />
     <Node UniqueName="[0-1010]PayrollTests.TimeCardTest" Expanded="true" />
+    <Node UniqueName="[0-1012]PayrollTests.UpdateEmployeeTest" Expanded="true" />
   </Nodes>
 </VisualState>

@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll" total="7" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-01-21" time="23:35:16">
+<test-results name="D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll" total="16" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-01-24" time="23:48:07">
   <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5420" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug" machine-name="АЛЬБЕРТ-ПК" user="Альберт" user-domain="Альберт-ПК" />
   <culture-info current-culture="ru-RU" current-uiculture="ru-RU" />
-  <test-suite type="Assembly" name="D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll" executed="True" result="Success" success="True" time="0.279" asserts="0">
+  <test-suite type="Assembly" name="D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll" executed="True" result="Success" success="True" time="0.352" asserts="0">
     <results>
-      <test-suite type="Namespace" name="PayrollTests" executed="True" result="Success" success="True" time="0.243" asserts="0">
+      <test-suite type="Namespace" name="PayrollTests" executed="True" result="Success" success="True" time="0.315" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="AddEmployeeTest" executed="True" result="Success" success="True" time="0.173" asserts="0">
+          <test-suite type="TestFixture" name="AddEmployeeTest" executed="True" result="Success" success="True" time="0.169" asserts="0">
             <results>
-              <test-case name="PayrollTests.AddEmployeeTest.TestAddCommissionedEmployee" executed="True" result="Success" success="True" time="0.111" asserts="6" />
+              <test-case name="PayrollTests.AddEmployeeTest.TestAddCommissionedEmployee" executed="True" result="Success" success="True" time="0.107" asserts="6" />
               <test-case name="PayrollTests.AddEmployeeTest.TestAddHourlyEmployee" executed="True" result="Success" success="True" time="0.003" asserts="5" />
               <test-case name="PayrollTests.AddEmployeeTest.TestAddSalariedEmployee" executed="True" result="Success" success="True" time="0.003" asserts="5" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="DelEmployeeTest" executed="True" result="Success" success="True" time="0.021" asserts="0">
+          <test-suite type="TestFixture" name="DelEmployeeTest" executed="True" result="Success" success="True" time="0.020" asserts="0">
             <results>
-              <test-case name="PayrollTests.DelEmployeeTest.TestDeleteEmployee" executed="True" result="Success" success="True" time="0.020" asserts="2" />
+              <test-case name="PayrollTests.DelEmployeeTest.TestDeleteEmployee" executed="True" result="Success" success="True" time="0.019" asserts="2" />
             </results>
           </test-suite>
           <test-suite type="TestFixture" name="SalesReceiptTest" executed="True" result="Success" success="True" time="0.007" asserts="0">
             <results>
-              <test-case name="PayrollTests.SalesReceiptTest.TestSalesReceipt" executed="True" result="Success" success="True" time="0.005" asserts="4" />
+              <test-case name="PayrollTests.SalesReceiptTest.TestSalesReceipt" executed="True" result="Success" success="True" time="0.004" asserts="4" />
             </results>
           </test-suite>
           <test-suite type="TestFixture" name="ServiceChargeTest" executed="True" result="Success" success="True" time="0.007" asserts="0">
@@ -32,6 +32,19 @@
           <test-suite type="TestFixture" name="TimeCardTest" executed="True" result="Success" success="True" time="0.006" asserts="0">
             <results>
               <test-case name="PayrollTests.TimeCardTest.TestTimeCardTransaction" executed="True" result="Success" success="True" time="0.004" asserts="4" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="UpdateEmployeeTest" executed="True" result="Success" success="True" time="0.070" asserts="0">
+            <results>
+              <test-case name="PayrollTests.UpdateEmployeeTest.TestChangeAddressTransaction" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+              <test-case name="PayrollTests.UpdateEmployeeTest.TestChangeCommissionedTransaction" executed="True" result="Success" success="True" time="0.003" asserts="6" />
+              <test-case name="PayrollTests.UpdateEmployeeTest.TestChangeDirectTransaction" executed="True" result="Success" success="True" time="0.008" asserts="4" />
+              <test-case name="PayrollTests.UpdateEmployeeTest.TestChangeHoldTransaction" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+              <test-case name="PayrollTests.UpdateEmployeeTest.TestChangeHourlyTransaction" executed="True" result="Success" success="True" time="0.002" asserts="5" />
+              <test-case name="PayrollTests.UpdateEmployeeTest.TestChangeMailTransaction" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+              <test-case name="PayrollTests.UpdateEmployeeTest.TestChangeMemberTransaction" executed="True" result="Success" success="True" time="0.003" asserts="5" />
+              <test-case name="PayrollTests.UpdateEmployeeTest.TestChangeNameTransaction" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+              <test-case name="PayrollTests.UpdateEmployeeTest.TestChangeSalariedTransaction" executed="True" result="Success" success="True" time="0.002" asserts="5" />
             </results>
           </test-suite>
         </results>

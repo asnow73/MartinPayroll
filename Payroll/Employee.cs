@@ -45,6 +45,13 @@ namespace Payroll
         public string Name
         {
             get { return name; }
+            set { this.name = value; }
+        }
+
+        public string Address
+        {
+            get { return address; }
+            set { this.address = value; }
         }
 
         public PaymentMethod Method

@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Payroll
 {
-    public class MailMethod : PaymentMethod
+    public class ChangeMailTransaction : ChangeMethodTransaction
     {
         private string address;
 
-        public MailMethod(string address)
+        public ChangeMailTransaction(int id, string address)
+            : base(id)
         {
             this.address = address;
         }
 
-        public string Address
+        protected override PaymentMethod Method
         {
-            get { return address; }
-            set { address = value; }
+            get { return new MailMethod(address); }
         }
     }
 }

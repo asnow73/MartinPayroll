@@ -46,6 +46,7 @@
     <Compile Include="SalesReceiptTest.cs" />
     <Compile Include="ServiceChargeTest.cs" />
     <Compile Include="TimeCardTest.cs" />
+    <Compile Include="UpdateEmployeeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Payroll\Payroll.csproj">

@@ -20,7 +20,7 @@ namespace PayrollTests
 
             Employee e = PayrollDatabase.GetEmployee(empId);
             Assert.IsNotNull(e);
-            UnionAffiliation af = new UnionAffiliation();
+            UnionAffiliation af = new UnionAffiliation(123, 6.6);
             e.Affiliation = af;
 
             int memberId = 86; // Maxwell Smart
