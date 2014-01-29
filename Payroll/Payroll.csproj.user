@@ -5,5 +5,6 @@
     <StartProgram>C:\Program Files %28x86%29\NUnit 2.6.3\bin\nunit.exe</StartProgram>
     <StartArguments>PayrollTests.dll /run</StartArguments>
     <StartWorkingDirectory>D:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\</StartWorkingDirectory>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
 </Project>

@@ -32,5 +32,23 @@ namespace Payroll
         {
             return (timeCards[date] as TimeCard);
         }
+
+        private double CalculatePayForTimeCard(TimeCard card)
+        {
+            double overtimeHours = Math.Max(0.0, card.Hours - 8);
+            double normalHours = card.Hours - overtimeHours;
+            return hourlyRate * normalHours + hourlyRate * 1.5 * overtimeHours;
+        }
+
+        public override double CalculatePay(Paycheck paycheck)
+        {
+            double totalPay = 0.0;
+            foreach (TimeCard timeCard in timeCards.Values)
+            {
+                if (IsInPayPeriod(timeCard.Date, paycheck))
+                    totalPay += CalculatePayForTimeCard(timeCard);
+            }
+            return totalPay;
+        }
     }
 }

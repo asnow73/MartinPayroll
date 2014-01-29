@@ -19,5 +19,10 @@ namespace Payroll
         {
             get { return salary; }
         }
+
+        public override double CalculatePay(Paycheck paycheck)
+        {
+            return salary;
+        }
     }
 }

@@ -20,5 +20,9 @@ namespace Payroll
             get { return address; }
             set { address = value; }
         }
+
+        public void Pay(Paycheck paycheck)
+        {
+        }
     }
 }

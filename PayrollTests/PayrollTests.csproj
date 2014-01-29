@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="AddEmployeeTest.cs" />
     <Compile Include="DelEmployeeTest.cs" />
+    <Compile Include="PaydayTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalesReceiptTest.cs" />
     <Compile Include="ServiceChargeTest.cs" />

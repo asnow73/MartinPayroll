@@ -39,5 +39,19 @@ namespace Payroll
         {
             return (salesRecepts[date] as SalesReceipt);
         }
+
+        public override double CalculatePay(Paycheck paycheck)
+        {
+            double totalPay = 0.0;
+
+            totalPay = salary;
+            foreach (SalesReceipt salereceipt in salesRecepts.Values)
+            {
+                if (IsInPayPeriod(salereceipt.Date, paycheck))
+                  totalPay += (salereceipt.Amount / 100.0) * commissionedRate;
+            }
+
+            return totalPay;
+        }
     }
 }
