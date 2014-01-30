@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payroll", "Payroll.csproj", "{6962D23F-FC59-43D6-A1EE-D622C352CD4D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayrollTests", "..\PayrollTests\PayrollTests.csproj", "{E4644F41-56F3-4522-9CAC-F633003D030A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{6962D23F-FC59-43D6-A1EE-D622C352CD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6962D23F-FC59-43D6-A1EE-D622C352CD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6962D23F-FC59-43D6-A1EE-D622C352CD4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4644F41-56F3-4522-9CAC-F633003D030A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4644F41-56F3-4522-9CAC-F633003D030A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4644F41-56F3-4522-9CAC-F633003D030A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4644F41-56F3-4522-9CAC-F633003D030A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

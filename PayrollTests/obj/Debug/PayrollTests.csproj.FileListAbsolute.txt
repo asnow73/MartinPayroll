@@ -1,0 +1,9 @@
+d:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.dll
+d:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\PayrollTests.pdb
+d:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\nunit.framework.dll
+d:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\Payroll.exe
+d:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\Payroll.pdb
+d:\MyProjects\MartindPayroll\PayrollTests\bin\Debug\nunit.framework.xml
+d:\MyProjects\MartindPayroll\PayrollTests\obj\Debug\PayrollTests.csprojResolveAssemblyReference.cache
+d:\MyProjects\MartindPayroll\PayrollTests\obj\Debug\PayrollTests.dll
+d:\MyProjects\MartindPayroll\PayrollTests\obj\Debug\PayrollTests.pdb
