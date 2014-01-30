@@ -44,6 +44,7 @@
     <Compile Include="Affiliation\Affiliation.cs" />
     <Compile Include="Affiliation\NoAffiliation.cs" />
     <Compile Include="Affiliation\UnionAffiliation.cs" />
+    <Compile Include="DateUtil.cs" />
     <Compile Include="Paycheck.cs" />
     <Compile Include="SalesReceipt.cs" />
     <Compile Include="ServiceCharge.cs" />

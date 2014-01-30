@@ -45,7 +45,7 @@ namespace Payroll
             double totalPay = 0.0;
             foreach (TimeCard timeCard in timeCards.Values)
             {
-                if (IsInPayPeriod(timeCard.Date, paycheck))
+                if (DateUtil.IsInPayPeriod(timeCard.Date, paycheck.PayPeriodStartDate, paycheck.PayPeriodEndDate))
                     totalPay += CalculatePayForTimeCard(timeCard);
             }
             return totalPay;

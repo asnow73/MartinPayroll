@@ -47,7 +47,7 @@ namespace Payroll
             totalPay = salary;
             foreach (SalesReceipt salereceipt in salesRecepts.Values)
             {
-                if (IsInPayPeriod(salereceipt.Date, paycheck))
+                if (DateUtil.IsInPayPeriod(salereceipt.Date, paycheck.PayPeriodStartDate, paycheck.PayPeriodEndDate))
                   totalPay += (salereceipt.Amount / 100.0) * commissionedRate;
             }
 

@@ -56,6 +56,15 @@ namespace Payroll
             double totalDues = 0;
             int fridays = NumberOfFridaysInPayPeriod(paycheck.PayPeriodStartDate, paycheck.PayPeriodEndDate);
             totalDues = dues * fridays;
+
+            foreach (ServiceCharge charge in charges.Values)
+            {
+                if (DateUtil.IsInPayPeriod(charge.Date,
+                    paycheck.PayPeriodStartDate,
+                    paycheck.PayPeriodEndDate))
+                    totalDues += charge.Amount;
+            }
+
             return totalDues;
         }
 
