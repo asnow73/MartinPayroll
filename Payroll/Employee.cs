@@ -21,7 +21,7 @@ namespace Payroll
             this.id = id;
             this.name = name;
             this.address = address;
-            this.affiliation = null;
+            this.affiliation = new NoAffiliation();
         }
 
         public Affiliation Affiliation
@@ -58,6 +58,27 @@ namespace Payroll
         {
             get { return method; }
             set { this.method = value; }
+        }
+
+        public bool IsPayDate(DateTime payDate)
+        {
+            return schedule.IsPayDate(payDate);
+        }
+
+        public void PayDay(Paycheck paycheck)
+        {
+            double grossPay = classification.CalculatePay(paycheck);
+            double deductions = affiliation.CalculateDeductions(paycheck);
+            double netPay = grossPay - deductions;
+            paycheck.GrossPay = grossPay;
+            paycheck.Deductions = deductions;
+            paycheck.NetPay = netPay;
+            method.Pay(paycheck);
+        }
+
+        public DateTime GetPayPeriodStartDate(DateTime date)
+        {
+            return schedule.GetPayPeriodStartDate(date);
         }
     }
 }

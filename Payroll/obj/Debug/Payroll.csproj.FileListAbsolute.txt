@@ -1,5 +1,5 @@
-D:\MyProjects\MartindPayroll\Payroll\bin\Debug\Payroll.exe.config
-D:\MyProjects\MartindPayroll\Payroll\bin\Debug\Payroll.exe
-D:\MyProjects\MartindPayroll\Payroll\bin\Debug\Payroll.pdb
-D:\MyProjects\MartindPayroll\Payroll\obj\Debug\Payroll.exe
-D:\MyProjects\MartindPayroll\Payroll\obj\Debug\Payroll.pdb
+d:\MyProjects\MartindPayroll\Payroll\bin\Debug\Payroll.exe.config
+d:\MyProjects\MartindPayroll\Payroll\bin\Debug\Payroll.exe
+d:\MyProjects\MartindPayroll\Payroll\bin\Debug\Payroll.pdb
+d:\MyProjects\MartindPayroll\Payroll\obj\Debug\Payroll.exe
+d:\MyProjects\MartindPayroll\Payroll\obj\Debug\Payroll.pdb

@@ -28,5 +28,9 @@ namespace Payroll
             get { return this.account; }
             set { this.account = value; }
         }
+
+        public void Pay(Paycheck paycheck)
+        {
+        }
     }
 }

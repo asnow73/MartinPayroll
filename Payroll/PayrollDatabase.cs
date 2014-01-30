@@ -42,5 +42,10 @@ namespace Payroll
         {
             unionMembers.Remove(memberId);
         }
+
+        public static ICollection GetAllEmployeeIds()
+        {
+            return employees.Keys;
+        }
     }
 }
